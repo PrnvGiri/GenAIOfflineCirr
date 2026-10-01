@@ -1,77 +1,63 @@
-# GenAI Offline Curriculum & Hands-On Labs
+# Complete 11-Hour GenAI & Agentic AI Curriculum
 
-This repository provides an 8-hour hands-on curriculum for mastering the **Google GenAI SDK (`google-genai`)** with Gemini models (`gemini-2.5-flash`), organized around an end-to-end incident and insurance claims automation hub.
-
----
-
-## 📚 Curriculum Breakdown
-
-Refer to [`curriculum.txt`](curriculum.txt) for the full 8-hour syllabus:
-* **Session 1: Gemini SDK & GenAI Foundations (2.5h)** — Basic text generation, system instructions, generation config (temperature), streaming responses, and multi-turn chat memory.
-* **Session 2: Multimodal AI & Structured Generation (2.5h)** — Image understanding with Gemini Vision and Pydantic schema-driven JSON extraction.
-* **Session 3: Function Calling, Documents, Embeddings & RAG (2.5h)** — Python tool calling, PDF understanding via Gemini File API, vector embeddings with `gemini-embedding-001`, semantic search RAG, and live Google Search grounding.
-* **Session 4: Advanced Gemini & Mini Project (30m)** — Voice call audio understanding, safety filter configuration, Context Caching architecture, and end-to-end automated claims pipeline.
+This repository contains the complete 11-hour hands-on curriculum:
+1. **GenAI with Gemini SDK (8 Hours)** in [`GenAI/`](GenAI/)
+2. **Autonomous Multi-Agent AI (3 Hours)** in [`AgenticAI/`](AgenticAI/)
 
 ---
 
 ## 📂 Repository Structure
 
 ```text
-├── curriculum.txt                 # The 8-hour syllabus
-├── output.md                      # Verified execution outputs from all hands-on scripts
-├── .env.example                   # Environment variable template
-├── hands_on/
-│   ├── check_models.py            # Verify API connection and inspect available models
-│   ├── 01_chatbot_foundations.py  # Session 1: Text, persona, streaming, chat
-│   ├── 02_multimodal_structured.py# Session 2: Image reading + strict Pydantic JSON
-│   ├── 03_tools_and_rag.py        # Session 3: Function calling, PDF API, RAG, Search
-│   └── 04_advanced_caching_audio.py# Session 4: Audio understanding, safety, caching
-└── samples/
-    ├── sample_receipt.png         # Mechanic repair estimate ($1,537.15)
-    ├── sample_policy.pdf          # Auto policy terms & conditions document
-    └── sample_call.wav            # Spoken customer phone call recording
+├── .env.example                       # API key configuration template
+├── README.md                          # Repository overview & quickstart
+│
+├── GenAI/                             # MODULE 1: 8-Hour Gemini SDK Curriculum
+│   ├── curriculum.txt                 # 8-hour syllabus breakdown
+│   ├── output.md                      # Verified execution outputs
+│   ├── samples/                       # Test assets (receipt image, policy PDF, audio call)
+│   │   ├── sample_receipt.png
+│   │   ├── sample_policy.pdf
+│   │   └── sample_call.wav
+│   └── hands_on/
+│       ├── check_models.py            # API model audit script
+│       ├── 01_chatbot_foundations.py  # Session 1: Text, persona, streaming, chat
+│       ├── 02_multimodal_structured.py# Session 2: Image reading + strict Pydantic JSON
+│       ├── 03_tools_and_rag.py        # Session 3: Function calling, PDF, RAG, Search
+│       └── 04_advanced_caching_audio.py# Session 4: Audio understanding, safety, caching
+│
+└── AgenticAI/                         # MODULE 2: 3-Hour Agentic AI Curriculum
+    ├── agenticCirr.txt                # 3-hour Agentic AI syllabus
+    ├── multi_agent_system.py          # Complete multi-agent implementation from scratch
+    ├── output.md                      # Verified multi-agent report execution output
+    └── README.md                      # Architecture diagram and design notes
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Quickstart
 
-### 1. Prerequisites
-* Python 3.10+
-* A Google Gemini API key from [Google AI Studio](https://aistudio.google.com/)
-
-### 2. Install Dependencies
+### 1. Install Dependencies
 ```bash
 pip install google-genai python-dotenv pillow pydantic numpy
 ```
 
-### 3. Setup Environment
-Copy the `.env.example` file to `.env` and add your API key:
-```bash
-cp .env.example .env
-```
-Edit `.env`:
+### 2. Configure API Key
+Create a `.env` file in the project root:
 ```ini
-GEMINI_API_KEY=your_actual_gemini_api_key_here
+GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
-### 4. Run the Labs
-Run any session script directly:
+### 3. Run GenAI Labs (Module 1)
 ```bash
-# Verify models
-python3 hands_on/check_models.py
-
-# Session 1: Chatbot Foundations
-python3 hands_on/01_chatbot_foundations.py
-
-# Session 2: Multimodal & Structured Output
-python3 hands_on/02_multimodal_structured.py
-
-# Session 3: Tools, PDF, Embeddings & RAG
-python3 hands_on/03_tools_and_rag.py
-
-# Session 4: Audio & Advanced Features
-python3 hands_on/04_advanced_caching_audio.py
+python3 GenAI/hands_on/check_models.py
+python3 GenAI/hands_on/01_chatbot_foundations.py
+python3 GenAI/hands_on/02_multimodal_structured.py
+python3 GenAI/hands_on/03_tools_and_rag.py
+python3 GenAI/hands_on/04_advanced_caching_audio.py
 ```
 
-All verified execution outputs are documented in [`output.md`](output.md).
+### 4. Run Agentic AI System (Module 2)
+```bash
+python3 AgenticAI/multi_agent_system.py
+```

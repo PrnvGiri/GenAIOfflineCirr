@@ -1,0 +1,109 @@
+Absolutely. If you want the **entire Agentic AI portion as one 3-hour session**, I’d structure it as one continuous hands-on journey rather than separate theory modules.
+
+## 3-Hour Agentic AI — Single Session
+
+### **0:00–0:30 — Agentic AI Fundamentals**
+- What is Agentic AI?
+- LLM vs AI Application vs AI Agent
+- What makes an application agentic?
+- Components of an AI Agent:
+  - Model
+  - Instructions
+  - Tools
+  - Memory/State
+  - Decision-making
+- Agent workflow
+- Single Agent architecture
+- **Quick hands-on: Build a basic tool-using Agent**
+
+### **0:30–1:00 — From Single Agent to Multi-Agent**
+- Limitations of a single agent
+- Why Multi-Agent Systems?
+- Agent specialization
+- Agent roles & responsibilities
+- Agent-to-Agent communication
+- Sequential vs Parallel execution
+- Supervisor/Router architecture
+- Handoff between agents
+
+### **1:00–1:30 — Multi-Agent Architecture**
+Design the complete system before coding:
+
+```text
+                    USER
+                      ↓
+               ┌─────────────┐
+               │  Supervisor │
+               │    Agent    │
+               └──────┬──────┘
+                      ↓
+          ┌───────────┼───────────┐
+          ↓           ↓           ↓
+     Researcher   Data Analyst   Critic
+       Agent         Agent        Agent
+          ↓           ↓           ↓
+          └───────────┼───────────┘
+                      ↓
+                Writer Agent
+                      ↓
+                Final Answer
+```
+
+- Define each agent
+- Define tools
+- Define inputs/outputs
+- Define communication
+- Define orchestration logic
+
+### **1:30–2:45 — Complete Multi-Agent Hands-on**
+**Build the system from scratch**
+
+- Create the LLM/model
+- Create individual agents
+- Give agents specialized instructions
+- Add tools
+- Create shared state/context
+- Implement supervisor
+- Implement routing
+- Implement agent communication
+- Combine agent outputs
+- Add final writer/reviewer
+- Test with real queries
+- Debug common agent failures
+
+### **2:45–3:00 — Wrap-up & Architecture**
+- Single Agent vs Multi-Agent
+- When should we use multiple agents?
+- Common Multi-Agent patterns
+- Where Agentic AI fits into real applications
+- Final architecture recap
+
+### Final Hands-on Project
+
+**Multi-Agent Research & Report Generator**
+
+```text
+User Query
+    ↓
+Supervisor Agent
+    ↓
+ ┌──────────────┬──────────────┐
+ ↓              ↓              ↓
+Researcher   Data Analyst    Critic
+ ↓              ↓              ↓
+ └──────────────┼──────────────┘
+                ↓
+          Writer Agent
+                ↓
+          Final Report
+```
+
+So the complete **11-hour course** becomes:
+
+**8 Hours GenAI**
+> Gemini SDK → Text → Chat → Multimodal → Structured Output → Function Calling → Documents → Embeddings → RAG → Grounding
+
+**3 Hours Agentic AI**
+> Agent → Tools → Single Agent → Multi-Agent → Supervisor → Orchestration → Complete Multi-Agent System
+
+This is a much cleaner progression for learners: **first teach them how to build GenAI applications, then show them how to turn those applications into autonomous multi-agent systems.**
