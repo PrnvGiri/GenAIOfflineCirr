@@ -45,6 +45,14 @@ This repository is organized into two core modules:
     ├── problem_statement.md           # Multi-agent problem statement & design
     ├── output.md                      # Verified execution output (Full Travel Plan)
     └── README.md                      # Agentic architecture & design notes
+│
+└── Assignments/                       # PRACTICE ASSIGNMENTS (GenAI & Agentic AI)
+    ├── README.md                      # Assignment index & submission guide
+    ├── GenAI_Assignment_01_Chatbot_Foundations.md
+    ├── GenAI_Assignment_02_Multimodal_Structured_Output.md
+    ├── GenAI_Assignment_03_Tools_PDF_Embeddings_RAG.md
+    ├── GenAI_Assignment_04_Audio_Safety_Caching.md
+    └── AgenticAI_Assignment_Multi_Agent_System.md
 ```
 
 ---
