@@ -1,0 +1,48 @@
+Generative AI with Gemini SDK — 8 Hour Curriculum
+Session 1 — Gemini SDK & GenAI Foundations | 2.5 Hours
+Introduction to Generative AI & LLMs
+Gemini models & capabilities
+Google GenAI SDK
+API key & environment setup
+Basic generate_content()
+Prompting with Gemini
+System Instructions
+Generation configuration
+Temperature & other parameters
+Multi-turn Chat
+Streaming responses
+Hands-on: Build a basic Gemini chatbot
+Session 2 — Multimodal AI & Structured Generation | 2.5 Hours
+Introduction to Multimodal AI
+Text + Image understanding
+Image analysis using Gemini
+Working with files/images
+Practical vision use cases
+Structured Outputs
+JSON responses
+Schema-based generation
+Extracting structured information from unstructured text
+Hands-on: Image analysis + structured data extraction
+Introduction to Function Calling
+Function Calling workflow
+Session 3 — Function Calling, Documents, Embeddings & RAG | 2.5 Hours
+Function Calling in depth
+Creating Python tools/functions
+Tool → Result → Final Response
+Multiple tools
+Document/PDF understanding
+Gemini File API
+Introduction to Embeddings
+Text → Vector representation
+Semantic similarity & search
+RAG architecture
+Retrieval → Context → Generation
+Grounding with Google Search
+Hands-on: Build a document-based RAG application
+Session 4 — Advanced Gemini + Mini Project | 30 Minutes
+Safety settings
+Audio understanding
+Context caching
+When to use different Gemini capabilities
+Final integrated mini-project / challenge
+
