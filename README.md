@@ -31,13 +31,18 @@ This repository is organized into two core modules:
 │   └── hands_on/
 │       ├── check_models.py            # API model audit script
 │       ├── 01_chatbot_foundations.py  # Session 1: Text, persona, streaming, chat memory
+│       ├── 01_problem_statement.md    # Session 1: Problem statement & architecture
 │       ├── 02_multimodal_structured.py# Session 2: Image reading + strict Pydantic JSON
+│       ├── 02_problem_statement.md    # Session 2: Problem statement & architecture
 │       ├── 03_tools_and_rag.py        # Session 3: Function calling, PDF API, RAG, Search
-│       └── 04_advanced_caching_audio.py# Session 4: Audio understanding, safety, caching
+│       ├── 03_problem_statement.md    # Session 3: Problem statement & architecture
+│       ├── 04_advanced_caching_audio.py# Session 4: Audio understanding, safety, caching
+│       └── 04_problem_statement.md    # Session 4: Problem statement & architecture
 │
 └── AgenticAI/                         # MODULE 2: 3-Hour Agentic AI Curriculum
     ├── agenticCirr.txt                # 3-Hour Agentic AI syllabus
     ├── multi_agent_system.py          # Practical multi-agent system from scratch
+    ├── problem_statement.md           # Multi-agent problem statement & design
     ├── output.md                      # Verified execution output (Full Travel Plan)
     └── README.md                      # Agentic architecture & design notes
 ```
