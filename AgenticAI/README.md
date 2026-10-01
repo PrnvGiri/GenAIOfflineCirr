@@ -1,49 +1,49 @@
-# Agentic AI — 3-Hour Hands-On Session
+# Agentic AI — Smart Travel & Budget Planner
 
-This module covers the complete 3-hour Agentic AI journey as specified in [`agenticCirr.txt`](agenticCirr.txt):
+A beginner-friendly, practical multi-agent AI system built using the **Google GenAI SDK (`google-genai`)** and **Gemini 2.5 Flash**.
 
-1. **Fundamentals (0:00–0:30):** What makes an application agentic, model vs tool vs memory vs decision loop, and single tool-using agents.
-2. **From Single to Multi-Agent (0:30–1:00):** Agent specialization, communication, and supervisor routing.
-3. **Multi-Agent Architecture (1:00–1:30):** System design with Supervisor $\to$ [Researcher, Analyst, Critic] $\to$ Writer.
-4. **Complete Multi-Agent System (1:30–3:00):** Hands-on implementation from scratch producing an executive research briefing.
+---
+
+## 💡 What This System Does
+
+Users give a plain English goal:
+> *"Plan a 2-day weekend trip to Goa for 2 friends with a total budget of Rs 20,000."*
+
+A specialized team of AI agents collaborates autonomously:
+1. **Single Agent with Tools:** Shows how 1 agent calls a Python calculator tool (`split_budget`) to compute per-person shares.
+2. **Researcher Agent:** Identifies top must-visit places and clean budget accommodations.
+3. **Budget Agent:** Quantifies realistic costs in Indian Rupees (Stay, Food, Scooty rental, Petrol, Activities) and validates against the budget limit.
+4. **Writer Agent:** Assembles a ready-to-use 2-day schedule (Day 1 & Day 2) with budget breakdown and money-saving pro-tips.
 
 ---
 
 ## 🏗️ Architecture
 
 ```text
-                    USER QUERY
-                        │
-               ┌─────────────────┐
-               │ Supervisor Agent│ (Plans & coordinates)
-               └────────┬────────┘
-                        │
-            ┌───────────┼───────────┐
-            ↓           ↓           ↓
-       Researcher  Data Analyst   Critic
-         Agent        Agent       Agent
-       (Gathers)   (Computes)   (Reviews)
-            │           │           │
-            └───────────┼───────────┘
-                        ↓
-                  Writer Agent  (Compiles Final Report)
-                        ↓
-                  FINAL DELIVERABLE
+               USER REQUEST ("Goa trip for 2, budget Rs 20,000")
+                                 │
+                                 ▼
+                     [ Researcher Agent ]
+             (Finds top places & verified budget stay)
+                                 │
+                                 ▼
+                      [ Budget Agent ]
+          (Calculates stay + food + scooty + activities)
+                                 │
+                                 ▼
+                      [ Writer Agent ]
+               (Builds crisp 2-day itinerary)
+                                 │
+                                 ▼
+                  READY-TO-USE TRAVEL ITINERARY
 ```
 
 ---
 
-## 📂 Files in this Module
+## 🚀 Running the Script
 
-* [`agenticCirr.txt`](agenticCirr.txt) — 3-hour Agentic AI Curriculum syllabus
-* [`multi_agent_system.py`](multi_agent_system.py) — Complete, linear, beginner-friendly hands-on implementation from scratch
-* [`output.md`](output.md) — Verified execution outputs including the generated Multi-Agent Executive Briefing
-
----
-
-## 🚀 How to Run
-
-From the project root:
 ```bash
 python3 AgenticAI/multi_agent_system.py
 ```
+
+All verified execution outputs are recorded in [`AgenticAI/output.md`](output.md).
